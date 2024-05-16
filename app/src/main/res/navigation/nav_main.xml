@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_homeFragment_to_addTaskFragment"
             app:destination="@id/addTaskFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailTaskFragment"
+            app:destination="@id/detailTaskFragment" />
     </fragment>
     <fragment
         android:id="@+id/taskFragment"
@@ -43,4 +46,9 @@
         android:name="com.example.todolist.ui.fragment.AddTaskFragment"
         android:label="fragment_add_task"
         tools:layout="@layout/fragment_add_task" />
+    <fragment
+        android:id="@+id/detailTaskFragment"
+        android:name="com.example.todolist.ui.fragment.DetailTaskFragment"
+        android:label="fragment_detail_task"
+        tools:layout="@layout/fragment_detail_task" />
 </navigation>

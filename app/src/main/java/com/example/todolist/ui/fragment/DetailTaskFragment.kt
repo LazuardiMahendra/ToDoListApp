@@ -8,19 +8,25 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupWithNavController
 
 import com.example.todolist.R
+import com.example.todolist.databinding.FragmentDetailTaskBinding
+import com.example.todolist.databinding.FragmentUpdateTaskBinding
 
 
 class DetailTaskFragment : Fragment() {
 
+    private var _binding: FragmentDetailTaskBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_detail_task, container, false)
+        _binding = FragmentDetailTaskBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

@@ -45,10 +45,14 @@
     <string name="text_status">Status</string>
     <string name="text_file">File</string>
 
-    <!-- Text Input -->
-
-
-
+    <!-- Text Helper -->
+    <string name="text_error_invalid_email">Invalid email address</string>
+    <string name="text_error_empty_field">This field is empty</string>
+    <string name="text_error_short_pass">Password below 8 characters</string>
+    <string name="text_error_pass_regex_not_match">Password not contain number or alphabet or too short</string>
+    <string name="text_error_pass_not_match">Password not match</string>
+    <string name="text_error_name_to_short">Use name with at least 3 characters</string>
+    <string name="text_error_phone_field">Phone length must be at least 9 characters</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

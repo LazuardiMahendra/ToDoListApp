@@ -31,13 +31,13 @@ class UpdateTaskFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        (activity as AppCompatActivity).setSupportActionBar(binding.toolbar)
-        binding.toolbar.setupWithNavController(
-            findNavController(),
-            AppBarConfiguration(findNavController().graph)
-        )
-        (activity as AppCompatActivity).supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_back)
-        (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
+//        (activity as AppCompatActivity).setSupportActionBar(binding.toolbar)
+//        binding.toolbar.setupWithNavController(
+//            findNavController(),
+//            AppBarConfiguration(findNavController().graph)
+//        )
+//        (activity as AppCompatActivity).supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_back)
+//        (activity as AppCompatActivity).supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
 }
