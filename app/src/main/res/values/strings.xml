@@ -54,6 +54,12 @@
     <string name="text_error_name_to_short">Use name with at least 3 characters</string>
     <string name="text_error_phone_field">Phone length must be at least 9 characters</string>
 
+    <!-- Text Input -->
+    <string name="text_ask_logout">Are you sure?</string>
+
+    <string name="text_cancel">Cancel</string>
+    <string name="text_logout">Logout</string>
+
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

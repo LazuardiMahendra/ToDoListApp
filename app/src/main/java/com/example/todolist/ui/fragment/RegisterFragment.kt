@@ -37,21 +37,15 @@ class RegisterFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         auth = Firebase.auth
-        val curentUser = auth.currentUser
 
-//        binding.etName.addTextChangedListener(watcher)
-//        binding.etPhone.addTextChangedListener(watcher)
         binding.etEmail.addTextChangedListener(watcher)
         binding.etPassword.addTextChangedListener(watcher)
         binding.etCPassword.addTextChangedListener(watcher)
 
         binding.btnSignUp.setOnClickListener {
-//            val name = binding.etName.text.toString()
-//            val phone = binding.etPhone.text.toString()
             val email = binding.etEmail.text.toString()
             val password = binding.etPassword.text.toString()
             val cPassword = binding.etCPassword.text.toString()
-
             if (!isRegisterFieldCorrect(email, password, cPassword)) {
                 binding.progress.visibility = View.GONE
             } else {
@@ -87,14 +81,10 @@ class RegisterFragment : Fragment() {
         override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
 
         override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
-//            val name = binding.etName.text.toString()
-//            val phone = binding.etPhone.text.toString()
             val email = binding.etEmail.text.toString()
             val password = binding.etPassword.text.toString()
             val cPassword = binding.etCPassword.text.toString()
 
-//            if (name.isNotBlank()) binding.etName.error = null
-//            if (phone.isNotBlank()) binding.etPhone.error = null
             if (email.isNotBlank()) binding.etEmail.error = null
             if (password.isNotBlank()) binding.etPassword.error = null
             if (cPassword.isNotBlank()) binding.etCPassword.error = null
@@ -105,8 +95,6 @@ class RegisterFragment : Fragment() {
 
     //check is field empty
     private fun isRegisterFieldCorrect(
-//        name: String,
-//        phone: String,
         email: String,
         pass: String,
         confirmPass: String
@@ -116,33 +104,12 @@ class RegisterFragment : Fragment() {
         val notMatch = resources.getString(R.string.text_error_pass_not_match)
         val below = resources.getString(R.string.text_error_short_pass)
         val regexMatch = resources.getString(R.string.text_error_pass_regex_not_match)
-        val phoneShort = resources.getString(R.string.text_error_phone_field)
 
         return when {
-//            name.isBlank() -> {
-//                binding.tilName.error = empty
-//                false
-//            }
-//
-//            phone.isBlank() -> {
-//                binding.tilPhoneNumber.error = empty
-//                false
-//            }
-//
-//            phone.length < 9 -> {
-//                binding.tilPhoneNumber.error = phoneShort
-//                false
-//            }
-
             email.isBlank() -> {
                 binding.tilEmail.error = empty
                 false
             }
-
-//            !Pattern..matcher(email).matches() -> {
-//                binding.tilEmail.error = invalid
-//                false
-//            }
 
             !Pattern.compile(pass).matcher(pass).matches() -> {
                 binding.tilPassword.error = regexMatch
@@ -165,16 +132,13 @@ class RegisterFragment : Fragment() {
             }
 
             else -> {
-//                binding.tilName.error = null
                 binding.tilEmail.error = null
                 binding.tilPassword.error = null
                 binding.tilConfirmPassword.error = null
-//                binding.tilPhoneNumber.error = null
                 binding.tilEmail.isErrorEnabled
-//                binding.tilName.isErrorEnabled
                 binding.tilPassword.isErrorEnabled
                 binding.tilConfirmPassword.isErrorEnabled
-//                binding.tilPhoneNumber.isErrorEnabled
+
                 true
             }
         }
