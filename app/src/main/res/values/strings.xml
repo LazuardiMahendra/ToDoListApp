@@ -1,3 +1,57 @@
 <resources>
     <string name="app_name">ToDoList</string>
+
+
+    <!-- Text Input Layout -->
+    <string name="til_name">Name</string>
+    <string name="til_phone">Phone Number</string>
+    <string name="til_email">Email</string>
+    <string name="til_password">Password</string>
+    <string name="til_confirm_password">Confirm Password</string>
+    <string name="til_title">Tittle</string>
+    <string name="til_desc">Description</string>
+    <string name="til_do_date">Date</string>
+    <string name="til_reminder">Reminder</string>
+    <string name="til_status">Status</string>
+    <string name="til_file">Upload File</string>
+
+    <!-- Button -->
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_upload">Upload</string>
+
+
+    <string name="text_regis">Dont have an account? \u003F</string>
+    <string name="text_to_regis">Create new account</string>
+
+
+    <!-- Menu -->
+    <string name="tittle_menu_home">Home</string>
+    <string name="tittle_menu_gallery">Gallery</string>
+    <string name="tittle_menu_task">Task</string>
+    <string name="tittle_menu_profile">Profile</string>
+
+
+    <!-- Text Input -->
+    <string name="text_todo">To Do</string>
+    <string name="text_progress">In Progress</string>
+    <string name="text_done">Done</string>
+    <string name="text_see_all">See All</string>
+    <string name="text_title">Title</string>
+    <string name="text_desc">Description</string>
+    <string name="text_date">Date</string>
+    <string name="text_reminder">Reminder</string>
+    <string name="text_status">Status</string>
+    <string name="text_file">File</string>
+
+    <!-- Text Input -->
+
+
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
