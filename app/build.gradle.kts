@@ -55,9 +55,26 @@ dependencies {
     //Material UI
     implementation ("com.google.android.material:material:1.12.0")
 
-    // Firebase
+    // Firebase Auth
     implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
     implementation("com.google.firebase:firebase-auth-ktx")
+
+    //Firebase Firestore
+    implementation(platform("com.google.firebase:firebase-bom:32.7.4"))
+    implementation("com.google.firebase:firebase-firestore")
+
+    implementation(platform("com.google.firebase:firebase-bom:32.3.1"))
+    implementation("com.google.firebase:firebase-database-ktx")
+
+    //file
+    implementation ("androidx.activity:activity-ktx:1.3.0")
+
+
+    //Storage
+    implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
+    implementation("com.google.firebase:firebase-storage")
+
+
 
     implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
     implementation("com.google.firebase:firebase-analytics")
